@@ -5,10 +5,10 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  azureSubscription: 'testServiceConnection'      # Replace with your service connection name
-  appName: 'app-billing-dev-021'                  # Replace with your Azure Web App name
+  azureSubscription: 'testServiceConnection'      
+  appName: 'app-billing-dev-021'                 
   artifactName: 'static-drop'
-  sourceFolder: 'final_assignment'                # Folder with index.html
+  sourceFolder: 'final_assignment'               
   publishDirectory: '$(Build.ArtifactStagingDirectory)/$(artifactName)'
 
 stages:
