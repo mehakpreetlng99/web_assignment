@@ -1,0 +1,57 @@
+trigger:
+- master  
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  azureSubscription: 'testServiceConnection'      # Replace with your service connection name
+  appName: 'app-billing-dev-021'                  # Replace with your Azure Web App name
+  artifactName: 'static-drop'
+  sourceFolder: 'final_assignment'                # Folder with index.html
+  publishDirectory: '$(Build.ArtifactStagingDirectory)/$(artifactName)'
+
+stages:
+- stage: Build
+  displayName: 'Package Static Files'
+  jobs:
+  - job: Package
+    steps:
+    - task: CopyFiles@2
+      displayName: 'Copy Static Files'
+      inputs:
+        SourceFolder: '$(Build.SourcesDirectory)/$(sourceFolder)'
+        Contents: '**'
+        TargetFolder: '$(publishDirectory)'
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Artifacts'
+      inputs:
+        PathtoPublish: '$(publishDirectory)'
+        ArtifactName: '$(artifactName)'
+        publishLocation: 'Container'
+
+- stage: Deploy
+  displayName: 'Deploy to Azure Web App'
+  dependsOn: Build
+  jobs:
+  - deployment: DeployWeb
+    environment: 'production'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: DownloadBuildArtifacts@0
+            displayName: 'Download Artifacts'
+            inputs:
+              buildType: 'current'
+              artifactName: '$(artifactName)'
+              downloadPath: '$(System.ArtifactsDirectory)'
+
+          - task: AzureWebApp@1
+            displayName: 'Deploy to Azure Web App'
+            inputs:
+              azureSubscription: '$(azureSubscription)'
+              appType: 'webApp'
+              appName: '$(appName)'
+              package: '$(System.ArtifactsDirectory)/$(artifactName)'
