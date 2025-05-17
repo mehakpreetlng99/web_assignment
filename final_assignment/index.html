@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Brokerage</title>
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/media.css">
+  <!-- <link rel="stylesheet" href="css/media2.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- rubik font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="/favicon_io/favicon.ico">
+</head>
+
+<body>
+    <header class="header-hld " >
+			<div class="container container-custom "   >
+				<div class="row">
+					<div class="col-3 " >
+						<a href="#"><img src="images/Group 233.svg" height="45" alt="logo" /></a>
+					</div>
+					<div class="col-9 d-flex align-items-center justify-content-end" >
+						<span class="mobile-menu" onclick="openNav()">&#9776;</span>
+						<nav class="menu sidenav" id="mySidenav" >
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+							<ul class="nav">
+								<li><a href="#">About </a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Case Studies</a></li>
+								<li><a href="#">Contact</a></li>
+								<li class="log-menu"><a href="#">Login</a></li>
+								<li class="reg-menu"><a href="#">Register</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+ 
+		</header>
+  <!-- hero section -->
+  <section class="hero-section pl-md-5 pr-md-5 pl-sm-5 ">
+    <div class="row container-fluid  pl-md-5 pr-md-5 ">
+      <div class="col-md-7 pt-5 hero-content  ">
+        <div class="hero-content-heading ">
+          Empowering your Financial Success through Strategic Investments
+        </div>
+        <div class="button ">Let's get Started</div>
+        <div class="row hero-row">
+          <div class="counter-item">
+            <p class="counter-title  ">Total Volume</p>
+            <p id="totalVolume" class="counter-value volume">82.6K+</p>
+          </div>
+          <div class="counter-item">
+            <p class="counter-title ">Total Trades</p>
+            <p id="totalTrades" class="counter-value trades">800+</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 hero-section-image">
+        <img src="../images/banners 2.svg" alt="Hero Image" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- section chart -->
+  <section class="chart pt-5">
+    <div class="container">
+      <div class="row align-items-center ">
+        <div class="col-lg-4 col-md-4 d-flex ">
+          <div class="hero-section-image  ">
+            <img src="../images/stock-image.svg" alt="Hero Image" class="hero-image ">
+          </div>
+        </div>
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-7 col-md-7 ">
+          <div class="">
+            <p class="chart-section-heading">
+              Experience The Lowest Costs In The Industry
+            </p>
+            <ul class="chart-section-list">
+              <li>Tailored Approach: We understand that every investor is unique. Our personalized strategies are
+                designed to align with your specific goals and risk tolerance.</li>
+              <li>Diverse Investment Options: Access a wide range of investment opportunities, from stocks and bonds to
+                real estate and alternative investments.</li>
+              <li>Cutting-Edge Technology: We leverage the latest technology to provide you with seamless account
+                management and timely market insights.</li>
+            </ul>
+            <button class="button">Let's get Started</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- section why choose us -->
+  <section class="why-choose-us pt-5">
+    <div class="hero-section pt-5">
+      <div class="container ">
+        <div class="choose-head">
+          <h3>WHY CHOOSE US?</h3>
+        </div>
+        <div class="row py-5 mt-3">
+          <div class="col-md-4 col-12 choose-content">
+            <img src="/images/Vector.svg" alt="group-162">
+            <h4>Expertise, Trust,
+              Results
+            </h4>
+            <p style="width:80%;">Nunc a nulla id sapien ultricies commodo id eu urna. Etiam sit amet justo vel.</p>
+          </div>
+          <div class="col-md-4 col-12 choose-content">
+            <img src="/images/Group.svg" alt="group">
+            <h4>Personalized, Reliable,
+              Growth
+            </h4>
+            <p style="width:80%;">Etiam sit amet justo vel. Nunc a nulla id sapien ultricies commodo id eu urna.</p>
+          </div>
+          <div class="col-md-4 col-12 choose-content">
+            <img src="/images/Vector (1).svg" alt="vector">
+            <h4>Innovation, Support,
+              Success</h4>
+            <p style="width:80%;">sapien ultricies commodo id eu urna. Etiam sit amet justo vel. Nunc a nulla id.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- client boarding -->
+  <section class=" container pt-5 pb-5">
+    <div class="pt-2 pl-5 pr-5">
+      <div class="accordian-main row ">
+        <div class="client-image col-lg-4 md-2 sm-2 mt-5">
+        </div>
+        <div class="col-1 "></div>
+        <div class="col-lg-7 md-3 sm-2  ">
+          <div class="client-main-heading">Client Onboarding Process</div>
+          <div class="section-fourth-accordion pt-4">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-block accordion-content d-flex justify-content-between align-items-center text-left rm-shadow"
+                      type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      1. Financial Consultation <span class="icon">-</span>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                  data-parent="#accordionExample">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-block d-flex accordion-content justify-content-between align-items-center text-left collapsed rm-shadow"
+                      type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo">
+                      2. Bond Subscription <span class="icon ">></span>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Some placeholder content for the second accordion panel.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0 ">
+                    <button
+                      class="btn btn-block accordion-content d-flex justify-content-between align-items-center text-left collapsed rm-shadow"
+                      type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                      aria-controls="collapseThree">
+                      3. Coupon Payout <span class="icon">></span>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Placeholder content for the third panel.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-block d-flex accordion-content justify-content-between align-items-center text-left collapsed rm-shadow"
+                      type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                      aria-controls="collapseFour">
+                      4. Nav and Financial Report <span class="icon ">></span>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Some placeholder content for the second accordion panel.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h2 class="mb-0 ">
+                    <button
+                      class="btn btn-block accordion-content d-flex justify-content-between align-items-center text-left collapsed rm-shadow"
+                      type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                      aria-controls="collapseFive">
+                      5. Bond Redemption<span class="icon">></span>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Placeholder content for the third panel.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- tab section -->
+  <section class="" style="background-color: #ECF0FF;">
+    <div class="container-fluid">
+      <div class="container pb-lg-5 pt-lg-5 " style="display: flex; flex-direction: column;">
+        <!-- Section Title -->
+        <div class=" tab-section-heading pb-lg-3 pt-3">
+          <div>OUR PRODUCTS AT A GLANCE</div>
+        </div>
+          <!-- Tabs -->
+          <div class=" content  tab-section " style="display:flex !important; flex-direction:row !important; align-items: center; padding-top:10px; padding-left:5px;">
+            <div class="individual col-md-6  col-sm-6 tab-section-heading  active-tab">INDIVIDUAL</div>
+            <div class="institutional col-md-6 col-sm-6 tab-section-heading ">INSTITUTIONAL</div>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content ">
+            <div class="written col-lg-7">
+              <div class="main-heading">Individual Brokerage Account</div>
+              <p>We help companies become stronger, grow faster, and ensure they are well-positioned for sustainable
+                long-term growth.</p>
+                <div class="pb-3">
+              <div class="button">Learn More ></div>
+            </div>
+          </div>
+            <div class="tab-section-image col-lg-5">
+              <div class="hero-image"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+
+
+  <!-- section card -->
+  <section class="card pb-5 ">
+    <div class="container-fluid ">
+      <div class="container " style="background: rgba(255, 255, 255, 1);">
+        <div class="row effect">
+          <div class="card1 shadow" style="width:18rem">
+            <img src="/images/image 123.svg" class="card-img-top" alt="image">
+            <div class="card-body" style="background: rgba(255, 255, 255,1);">
+              <p style="color: rgba(144,144, 144,1);font-weight: 400; line-height: 20px; size: 20px;">January 01, 2021
+              </p>
+              <h5 class="card-title" style="font-weight: 700; line-height: 33px; size:30px ">How to Start A <br>
+                Successful in 2020</h5>
+              <p class="card-text" style="line-height:20px ; font-weight:400 ; size: 20px;">Far far away, behind the
+                word mountains, far from the countries Vokalia and Consonantia.</p>
+              <a href="#" class="btn choose-btn" style="width: 133.8555450439453;
+                height: 49.2130012512207;
+                top: 4388.15px;
+                left: 196px;
+                 background:black; color: rgba(255,255,255,1);border-radius: 0px;">Read More</a>
+            </div>
+          </div>
+          <div class="card2 shadow" style="width: 18rem;">
+            <img src="/images/image 124.svg" class="card-img-top" alt="image">
+            <div class="card-body" style="background: rgba(255, 255, 255,1);">
+              <p style="color: rgba(144,144, 144,1); font-weight: 400; line-height: 20px; size: 20px;">January 01, 2021
+              </p>
+              <h5 class="card-title" style="font-weight: 700; line-height: 33px; size:30px ">Grow Your Business <br>with
+                Email Marketing</h5>
+              <p class="card-text" style="line-height:20px ; font-weight:400 ; size: 20px;">Far far away, behind the
+                word mountains, far from the countries Vokalia and Consonantia.</p>
+              <a href="#" class="btn choose-btn" style="width: 133.8555450439453;
+                height: 49.2130012512207;
+                top: 4388.15px;
+                left: 196px;
+                 background:black; color: rgba(255,255,255,1);border-radius: 0px;">Read More</a>
+
+            </div>
+          </div>
+          <div class="card3 shadow" style="width: 18rem;">
+            <img src="/images/image 125.svg" class="card-img-top" alt="image">
+            <div class="card-body" style="background: rgba(255, 255, 255,1);">
+              <p style="color: rgba(144,144, 144,1); font-weight: 400; line-height: 20px; size: 20px;">January 01, 2021
+              </p>
+              <h5 class="card-title" style="font-weight: 700; line-height: 33px; size:30px ">The 4 Pillars Every <br>
+                Online Business</h5>
+              <p class="card-text" style="line-height:20px ; font-weight:400 ; size: 20px;">Far far away, behind the
+                word mountains, far from the countries Vokalia and Consonantia.</p>
+              <a href="#" class="btn choose-btn" style="width: 133.8555450439453;
+                height: 49.2130012512207;
+                top: 4388.15px;
+                left: 196px;
+                 background:black; color: rgba(255,255,255,1);border-radius: 0px;">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section frequently asked questions -->
+  <section class="frequently mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="main-heading">Frequently asked Questions</div>
+          <div class="accordion-frequent">
+            <div class="accordian-main row ">
+              <div class="col-12 column pl-lg-5 ">
+                <div class="section-fourth-accordion pt-4">
+                  <div class="accordion" id="accordionExample">
+
+                    <div class="card">
+                      <div class="card-header" id="headingOneForm">
+                        <h2 class="mb-0">
+                          <button
+                            class="btn btn-block  accordion-content d-flex justify-content-between align-items-center text-left rm-shadow"
+                            type="button" data-toggle="collapse" data-target="#collapseOneForm" aria-expanded="true"
+                            aria-controls="collapseOneForm">
+                            1. How can I access your 24/7 Support? <span class="icon-frequent">-</span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseOneForm" class="collapse show" aria-labelledby="headingOneForm"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-header" id="headingTwoForm">
+                        <h2 class="mb-0">
+                          <button
+                            class="btn btn-block d-flex accordion-content justify-content-between align-items-center text-left collapsed-frequent rm-shadow"
+                            type="button" data-toggle="collapse" data-target="#collapseTwoForm" aria-expanded="false"
+                            aria-controls="collapseTwoForm">
+                            2. What sucess stories can you share?<span class="icon-frequent ">></span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseTwoForm" class="collapse" aria-labelledby="headingTwoForm"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                          Some placeholder content for the second accordion panel.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-header" id="headingThreeForm">
+                        <h2 class="mb-0 ">
+                          <button
+                            class="btn btn-block accordion-content d-flex justify-content-between align-items-center text-left collapsed-frequent rm-shadow"
+                            type="button" data-toggle="collapse" data-target="#collapseThreeForm" aria-expanded="false"
+                            aria-controls="collapseThreeForm">
+                            3. Are There any fees associated with your services? <span class="icon-frequent">></span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseThreeForm" class="collapse" aria-labelledby="headingThreeForm"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                          Placeholder content for the third panel.
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="card">
+                      <div class="card-header" id="headingFourForm">
+                        <h2 class="mb-0">
+                          <button
+                            class="btn btn-block d-flex accordion-content justify-content-between align-items-center text-left collapsed-frequent rm-shadow"
+                            type="button" data-toggle="collapse" data-target="#collapseFourForm" aria-expanded="false"
+                            aria-controls="collapseFourForm">
+                            4. How do I get started with your services? <span class="icon-frequent ">></span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseFourForm" class="collapse" aria-labelledby="headingFourForm"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                          Some placeholder content for the second accordion panel.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-header" id="headingFiveForm">
+                        <h2 class="mb-0 ">
+                          <button
+                            class="btn btn-block accordion-content d-flex justify-content-between align-items-center text-left collapsed-frequent rm-shadow"
+                            type="button" data-toggle="collapse" data-target="#collapseFiveForm" aria-expanded="false"
+                            aria-controls="collapseFiveForm">
+                            5. Can I transfer my existing services to your platform?<span class="icon-frequent">></span>
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseFiveForm" class="collapse" aria-labelledby="headingFiveForm"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                          Placeholder content for the third panel.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section form -->
+  <section class="form pt-5">
+    <div class="full">
+      <div class="container">
+        <div class="row pt-3 pb-3">
+          <div class="col-sm-5">
+            <div class="container p-4">
+              <div class="form-image"></div>
+            </div>
+          </div>
+          <div class="col-sm-7 content-item">
+            <div class="content-heading pt-3">
+              <div class="form-section-heading">Let’s Discuss Investment</div>
+            </div>
+            <div class="content-para">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales suscipit dui, porta condimentum
+                erat euismod quis. Nullam elementum.</p>
+            </div>
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Enter your full name" required>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Mobile number" required>
+                </div>
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Enter your email" required></textarea>
+                </div>
+              </div>
+              <div class="mt-3">
+                <textarea class="form-control" rows="4" placeholder="Your message" required></textarea>
+              </div>
+              <div class="mt-4">
+                <button type="submit" class="button">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- section contact us -->
+  <section>
+    <div class="container-fluid custom-cont py-3 pl-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 col-12 left-part my-3">
+            <h1>Interested?<br>Let’s Start a Projects Together</h1>
+          </div>
+          <div class="col-md-3 col-12 right-part my-3 mt-5">
+            <button class="contact-button">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="container-fluid">
+    <div class="container">
+      <div class="row py-5 ml-3 align-all">
+        <div class="col-md-3 col-sm-6 col-12 sec1-items list">
+          <img src="/images/Group 233.svg" alt="logo-pic">
+          <p>Connect with Vista Brokerage for expert financial guidance, diverse investment options, and a path to a
+            prosperous future. Your success is our priority.</p>
+          <div class="favicons">
+            <a href="https://www.facebook.com/"><img src="/images/facebook.svg" alt="facebook-logo"></a>
+            <a href="https://www.instagram.com/"><img src="/images/instagram.svg" alt="insta-logo"></a>
+            <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><img src="/images/twitter.svg" alt="twitter-logo"></a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <ul class="list-items">
+            <h3 style="font-size: 24px; line-height: 32px; font-weight: 700;">Company info</h3>
+            <a href="#"><li>About Us</li></a>
+            <a href="#"><li>Carrier</li></a>
+            <li>We are hiring</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <ul class="list-items">
+            <h3 style="font-size: 24px; line-height: 32px; font-weight: 700;">Features</h3>
+            <li>Business Marketing</li>
+            <li>User Analytic</li>
+            <li>Live Chat</li>
+            <li>Unlimited Support</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12">
+          <ul class="list-items">
+            <h3 style="font-size: 24px; line-height: 32px; font-weight: 700;">Resources</h3>
+            <li>IOS & Android</li>
+            <li>Watch a Demo</li>
+            <li>Customers</li>
+            <li>API</li>
+          </ul>
+        </div>
+      </div>
+      <p
+        style=" color: #616161;text-align: center; font-size: 16px; font-weight: 500; line-height: 24px; padding-bottom: 40px;">
+        ©2023 Nassar Brokerage</p>
+    </div>
+  </footer>
+  <!-- custom javascript -->
+  <script src="js/script.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <!-- methods call -->
+  <script>
+    animateCounter("totalVolume", 80000, 82600, 3000);
+    animateCounter("totalTrades", 780, 800, 3000);
+  </script>
+</body>
+
+</html>
